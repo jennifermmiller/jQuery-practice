@@ -101,3 +101,59 @@ $('.find-me span').hover(function(){
 }, function(){
   $(this).removeClass('hilite');
 });
+
+//Example 16
+$('.what-up').dblclick(function(){
+  alert("Couldn't resist!");
+});
+
+//Example 17
+$('.start-here').mouseup(function(){
+  if ($('.circle:first').is(':hidden') ) {
+    $('.circle').slideDown('fast');
+  } else {
+    $('.circle').hide();
+  }  
+});
+
+//example 18 & 19
+$('.question')
+  .mousedown(function(){
+    $(this).append("<span style='color:purple;'>A BUTTLOAD!</span>");
+  })
+  .mouseup(function(){
+    $(this).append("<span style='color:red;'> For cereal!</span>");
+  });
+
+//example 20 & 21
+$('.grr p').focusin(function(){
+  $(this).find('span').css('display','inline').fadeOut(2000);
+});
+
+//example 22
+$('.ur-mom').click(function(){
+  $('.target').blur();
+});
+
+//example 23
+$('.what-evs').delegate('p','click',function(){
+  $(this).after('<p>What?!? Oh no you didn\'t!</p>');
+});
+
+//example 24
+$('.box-yo').hover(function(){
+  $(this).addClass('box-yo-move');
+});
+
+//example 25
+$('.switch-aroo').toggle(
+  function(){
+    $(this).addClass('switch-ster');
+  }, function(){
+    $(this).removeClass('switch-ster');
+  } 
+);
+
+
+
+

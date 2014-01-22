@@ -211,3 +211,80 @@ input {
   display: inline;
   color: blue;
 }
+
+//Example 16
+.what-up{
+  width: 250px;
+  height: 125px;
+  line-height: 125px;
+  font-size: 32px;
+  background: red;
+  color: yellow;
+}
+
+//example 17
+.start-here{
+margin-bottom: 0;
+}
+
+.circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: brown;
+  display: none;
+  float: left;
+  margin:10px 20px 0 0;
+}
+
+//example 20 & 21
+.grr span{
+  display: none;
+}
+
+//example 22
+.ur-mom{
+  display: inline;
+}
+
+//example 23
+.what-evs p{
+  width: 150px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+//example 24 
+.box-yo{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: orange;
+  box-shadow: 2px 2px gray;
+  @include transition(all 1s ease);
+
+  &.box-yo-move{
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background: brown;
+  }
+}
+
+//example 25
+.switch-aroo{
+  width: 0; 
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid black;
+
+  &.switch-ster{
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid blue;
+  }
+}
+
