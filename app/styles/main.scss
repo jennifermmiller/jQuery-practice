@@ -275,6 +275,7 @@ margin-bottom: 0;
 
 //example 25
 .switch-aroo{
+  margin-top: 100px;
   width: 0; 
   height: 0;
   border-left: 50px solid transparent;
@@ -287,4 +288,65 @@ margin-bottom: 0;
     border-bottom: 200px solid blue;
   }
 }
+
+//example 26
+.box-man input{
+  width: 30px;
+}
+
+//example 27
+.out-box{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: red;
+}
+
+.out-box .in-box{
+  position: absolute;
+  margin: 100px;
+  width: 200px;
+  height: 200px;
+  background: blue;
+}
+
+//example 28
+.friends{
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+  background: pink;
+  display: inline-block;
+}
+
+//example 29
+.friends-two{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: lightblue;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+//example 30
+.last{
+  width: 500px;
+  height: 300px;
+  line-height: 300px;
+  color: transparent;
+  text-align: center;
+  background: red;
+  box-shadow: 2px 2px gray;
+
+  &.last-est{
+  color: white;
+  font-size: 48px;  
+  }
+}
+
+
+
+
+
 

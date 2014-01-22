@@ -146,14 +146,30 @@ $('.box-yo').hover(function(){
 });
 
 //example 25
-$('.switch-aroo').toggle(
-  function(){
-    $(this).addClass('switch-ster');
-  }, function(){
-    $(this).removeClass('switch-ster');
-  } 
-);
+$('.switch-aroo').bind("mouseenter mouseleave", function(){
+  $(this).toggleClass('switch-ster');
+});
 
+//example 26 
+$('.box-man input:not(:checked) + span').css( 'background-color', 'lightblue');
+$('.box-man input').attr('disabled', 'disabled');
 
+//example 27 - can also target siblings (stackoverflow)
+$('.in-box').click(function (){
+  $(this).parent().css('background-color', 'orange');
+ });
+ 
+ //example 28
+ $('.friends').hover(function(){
+  $(this).siblings().css('background-color', 'red');
+ });
 
+ //example 29
+ $('.friends-two').dblclick(function(){
+  $(this).siblings('.special').css('border', '3px solid darkblue');
+ }); 
 
+//example 30
+$('.last').hover(function(){
+  $(this).addClass('last-est');
+});
